@@ -1,0 +1,36 @@
+{
+  "language-name": "عربيه",
+  "home-title": "فريق الإنقاذ قادم!",
+  "home-subtitle": "حاسبة بيانات الطائرات",
+  "next-button": "التالي",
+  "mass-placeholder": "وزن الحمولة",
+  "date-placeholder": "تاريخ تنفيذ المهمة",
+
+  "results-title": "ها هي النتائج:",
+  "for-mass": "(على حمولة {{mass}} كجم)",
+  "change-mass": "تغيير في وزن الحمولة",
+
+  "no-hours": "لا توجد ساعات متاحة",
+  "weather-card-title": "معلومات الطقس",
+  "temp-at-takeoff": "درجة الحرارة في هذا التاريخ:",
+  "mindeg-to-maxdeg": "بين {{min}} درجة و {{max}} درجة",
+  "available-hours": "الساعات المتاحة للمغادرة:",
+  "weather-tooltip-1": "يمكن أن تقلع الطائرة فقط عندما تكون درجة الحرارة بين 15 درجة و 30 درجة.",
+  "weather-tooltip-2": "في اليوم الذي اخترته ، هذه هي الأوقات المناسبة للمغادرة.",
+
+  "plane-card-title": "معلومات المظهر",
+  "pos-at-takeoff": "مسافة الإقلاع:",
+  "meters": "متر",
+  "time-before-takeoff": "الوقت قبل المغادرة:",
+  "takeoff-time-tooltip": "لا يمكن إكمال المهمة إلا إذا كان الوقت قبل الإقلاع أقل من 60 ثانية.",
+  "seconds": "ثواني",
+
+  "mission-cannot-complete": "لا يمكن تنفيذ المهمة!",
+  "issue-found": "تم العثور على مشكلة واحدة:",
+  "issues-found": "تم العثور على {{amount}} مشاكل:",
+  "found": "تم ايجادها",
+  "time-bigger-than-60": "وقت الإقلاع أكبر من 60 ثانية!",
+  "remove-atleast-mass": "من أجل الإقلاع في أقل من 60 ثانية ، يرجى إسقاط حوالي {{الكتلة}} كجم من الشحنة على الأقل.",
+  "no-available-hours-for": "لم يتم العثور على أوقات المغادرة المتاحة!",
+  "choose-another-day": "الرجاء اختيار يوم آخر."
+}

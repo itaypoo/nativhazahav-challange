@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+:root {
+    /* Customize your colors here. */
+    --color-background: #fbfcff;
+    --color-on-background: #1c1d1e;
+    --color-on-background-faded: #adadb4;
+
+    --color-card-background: #f3f3f8;
+
+    --color-primary: #2664ff;
+    --color-primary-faded: #a3bbff;
+    --color-on-primary: #FFFFFF;
+
+    --color-alert: #b24a62;
+    --color-alert-faded: #ffecf3;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+/* Globals */
+
+body {
+    background-color: var(--color-background);
+}
+* {
+    font-family: 'Manrope', sans-serif;
+    color: var(--color-on-background);
+}
+
+
+
+/* Text */
+
+h1 {
+    font-size: 40px;
+}
+
+
+/* Chip */
+
+span.chip, p.chip {
+    background-color: var(--color-card-background);
+    padding: 4px 11px;
+    border-radius: 20px;
+}
+span.chip-colored, p.chip-colored {
+    background-color: var(--color-primary-faded);
+    color: var(--color-on-primary);
+    padding: 4px 11px;
+    border-radius: 20px;
+}
+
+
+
+/* Buttons */
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px var(--color-primary-faded);
+    cursor: pointer;
+    transition: box-shadow ease-in-out 100ms,
+    scale ease-in-out 100ms,
+    color ease-in-out 100ms;
+}
+button:hover {
+    scale: 0.99;
+    box-shadow: none;
+}
+button.button-big {
+    font-weight: bold;
+    padding: 14px 24px;
+}
+button.button-outlined {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    box-shadow: none;
+}
+button.button-outlined:hover {
+    color: var(--color-primary);
+}
+
+@keyframes beat {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.8;
+    }
+}
+button:focus {
+    animation: beat 200ms ease-in-out;
+}
+button:active {
+    animation: none;
+}
+
+
+
+/* Link */
+
+a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+    transition: translate ease-in-out 100ms;
+}
+a:hover {
+    translate: 3px 0;
+}
+
+
+/* Input Field */
+
+input {
+    outline: 1px solid var(--color-on-background);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: outline ease-in-out 100ms,
+    box-shadow ease-in-out 100ms;
+}
+input:focus {
+    outline: 1px solid var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary-faded);
+    border: none;
+}
+
+
+/* Select */
+
+select {
+    outline: 1px solid var(--color-on-background);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: outline ease-in-out 100ms,
+    box-shadow ease-in-out 150ms;
+}
+select:focus {
+    outline: 1px solid var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary-faded);
+    border: none;
+}
+
+
+
+/* Standard Card */
+
+div.card {
+    background-color: var(--color-card-background);
+    border: 1px solid var(--color-on-background-faded);
+    box-shadow: 0 3px 8px rgba(0,0,0, 0.05);
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: box-shadow ease-in-out 100ms;
+}
+div.card > * {
+    margin: 5px 0 5px 0;
+}
+div.card:hover {
+    box-shadow: none;
+}
+div.card > img.card-header {
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+/* Alert Card */
+div.card.card-alert {
+    border: 1px solid var(--color-alert);
+    background-color: var(--color-alert-faded);
+    box-shadow: 0 3px 8px 4px var(--color-alert-faded);
+}
+div.card.card-alert:hover {
+    box-shadow: none;
+}
+div.card.card-alert > * {
+    color: var(--color-alert);
+}
+
+
+
+/* Button Card */
+
+div.card.card-button {
+    background-color: var(--color-primary);
+    border: none;
+    box-shadow: 0 3px 15px 0 var(--color-primary-faded);
+    cursor: pointer;
+    transition: box-shadow ease-in-out 100ms,
+    translate ease-in-out 150ms,
+    opacity ease-in-out 100ms;
+}
+div.card.card-button > * {
+    color: var(--color-on-primary);
+}
+div.card.card-button a {
+    color: var(--color-primary-faded);
+}
+div.card.card-button:hover {
+    box-shadow: 0 7px 25px 0 var(--color-primary-faded);
+    translate: 0 -2px;
+}
+div.card.card-button:active {
+    box-shadow: 0 3px 15px 0 var(--color-primary-faded);
+    opacity: 0.9;
+    translate: 0 0px;
+}
+
+
+
+
+/* Dropdown Menu */
+
+div.dropdown {
+    opacity: 0;
+    z-index: -999;
+    scale: 1 0.8;
+    position: absolute;
+    margin-top: 10px;
+    background-color: var(--color-on-background);
+    box-shadow: 0 3px 15px 0px var(--color-on-background-faded);
+    border-radius: 10px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: opacity ease-in-out 100ms,
+    z-index ease-in-out 100ms,
+    scale ease-in-out 100ms;
+    transform-origin: top center;
+}
+div.dropdown > button {
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    color: var(--color-background);
+    font-weight: normal;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    text-align: left;
+    transition: color ease-in-out 100ms,
+    background-color ease-in-out 100ms;
+
+    scale: 1 0;
+}
+div.dropdown > button:hover {
+    box-shadow: none;
+    scale: 1;
+    color: var(--color-primary-faded);
+    background-color: rgba(255,255,255,0.1);
+}
+
+div.dropdown:focus-within {
+    opacity: 1;
+    z-index: 2;
+    scale: 1 1;
+}
+.has-dropdown:focus + div.dropdown {
+    opacity: 1;
+    z-index: 2;
+    scale: 1 1;
+}
+.has-dropdown:focus + div.dropdown > button  {
+    scale: 1 1;
+}
+div.dropdown:focus-within > button  {
+    scale: 1 1;
+}
+
+
+
+/* Tooltip */
+
+.has-tooltip:hover + div.tooltip {
+    opacity: 1;
+    z-index: 999;
+    scale: 1 1;
+}
+div.tooltip:hover {
+    opacity: 1;
+    z-index: 999;
+    scale: 1 1;
+}
+div.tooltip {
+    opacity: 0;
+    z-index: -999;
+    scale: 1 0.7;
+    transform-origin: top center;
+    position: absolute;
+    margin-top: 3px;
+    background-color: var(--color-on-background);
+    box-shadow: 0 3px 15px 0px var(--color-on-background-faded);
+    color: var(--color-background);
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: opacity ease-in-out 100ms,
+    z-index ease-in-out 100ms,
+    scale ease-in-out 100ms;
+}

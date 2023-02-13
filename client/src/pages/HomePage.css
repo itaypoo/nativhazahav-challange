@@ -1,0 +1,134 @@
+:root {
+    overflow: hidden;
+}
+
+
+.home-main-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-flexbox-item {
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-flexbox-item-center {
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.home-subtitle {
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--color-on-background-faded);
+}
+
+form.home-mass-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+form.home-mass-form > * {
+    width: 100%;
+}
+form.home-mass-form > input {
+    width: calc(100% - 20px);
+}
+
+.home-lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.home-lang-switch > button {
+    width: 100%;
+}
+.home-lang-switch > .dropdown {
+    margin-top: 45px;
+    width: 150px;
+}
+
+.home-flexbox-item-center > .home-plane-icon {
+    font-size: 25vw;
+    rotate: 45deg;
+    user-select: none;
+    color: var(--color-on-background-faded);
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .home-hide-small-screen {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .home-mass-form {
+        width: min(500px, 100%);
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+    .home-mass-form {
+        width: 30%;
+        min-width: 200px;
+    }
+
+}
+
+
+.date-picker > button {
+    box-shadow: none;
+}
+.date-picker {
+    position: absolute;
+    z-index: 3;
+}
+.date-picker-input {
+    width: calc(100% - 20px);
+}
+.date-picker-clear-button {
+    box-shadow: none;
+}
+.date-picker-clear-button:hover {
+    scale: 1.1;
+}
+.date-picker-day {
+    transition: ease-in-out 100ms;
+}
+
+.icon {
+    font-size: 15px !important;
+}
+
+.tooltip {
+    max-width: 300px;
+}

@@ -1,0 +1,36 @@
+{
+  "language-name": "English",
+  "home-title": "Rescue is coming!",
+  "home-subtitle": "Plane info calculator",
+  "next-button": "Next",
+  "mass-placeholder": "Payload mass",
+  "date-placeholder": "Mission date",
+
+  "results-title": "Here are your results:",
+  "for-mass": "(For {{mass}}kg of mass)",
+  "change-mass": "Change mass value",
+
+  "no-hours": "No available hours",
+  "weather-card-title": "Weather Info",
+  "temp-at-takeoff": "Temperature at takeoff:",
+  "mindeg-to-maxdeg": "{{min}}°C to {{max}}°C",
+  "available-hours": "Available hours for takeoff:",
+  "weather-tooltip-1": "The plane can only takeoff when the temperature is between 15°C to 30°C.",
+  "weather-tooltip-2": "On the day you selected, these are the hours in which the temperature is suitable for takeoff.",
+
+  "plane-card-title": "Plane Info",
+  "pos-at-takeoff": "Position at takeoff:",
+  "meters": "meters",
+  "time-before-takeoff": "Time before takeoff:",
+  "takeoff-time-tooltip": "The mission will be able to be completed only if the time before takeoff is lower than 60 seconds.",
+  "seconds": "seconds",
+
+  "mission-cannot-complete": "The mission cannot be completed!",
+  "issue-found": "1 issue found:",
+  "issues-found": "{{amount}} issues found:",
+  "found": "found",
+  "time-bigger-than-60": "Time before take off is bigger than 60 seconds!",
+  "remove-atleast-mass": "To take off in less than 60 seconds, please remove at least {{mass}}kg of mass.",
+  "no-available-hours-for": "There are no available hours for this mission!",
+  "choose-another-day": "Please select a different day."
+}

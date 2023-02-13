@@ -1,0 +1,36 @@
+{
+  "language-name": "עברית",
+  "home-title": "צוות החילוץ מגיע!",
+  "home-subtitle": "מחשבון נתוני מטוס",
+  "next-button": "הבא",
+  "mass-placeholder": "משקל המטען",
+  "date-placeholder": "תאריך ביצוע המשימה",
+
+  "results-title": "הנה התוצאות:",
+  "for-mass": "(על מטען בעל {{mass}}קג)",
+  "change-mass": "שינוי משקל מטען",
+
+  "no-hours": "אין שעות זמינות",
+  "weather-card-title": "מידע על מזג האוויר",
+  "temp-at-takeoff": "טמפרטורה בתאריך זה:",
+  "mindeg-to-maxdeg": "בין {{min}} מעלות ל-{{max}} מעלות",
+  "available-hours": "שעות זמינות להמראה:",
+  "weather-tooltip-1": "המטוס יכול להמריא רק כאשר הטמפרטורה בין 15 מעלות לבין 30 מעלות.",
+  "weather-tooltip-2": "ביום שבחרת, אלו הם השעות המתאימות להמראה.",
+
+  "plane-card-title": "מידע על המראה",
+  "pos-at-takeoff": "מרחק המראה:",
+  "meters": "מטר",
+  "time-before-takeoff": "זמן לפני המראה:",
+  "takeoff-time-tooltip": "ניתן להשלים את המשימה רק אם הזמן לפני ההמראה קטן מ60 שניות.",
+  "seconds": "שניות",
+
+  "mission-cannot-complete": "לא ניתן לבצע את המשימה!",
+  "issue-found": "בעיה אחת נמצאה:",
+  "issues-found": "{{amount}} בעיות נמצאו:",
+  "found": "נמצאו",
+  "time-bigger-than-60": "זמן ההמראה גדול מ-60 שניות!",
+  "remove-atleast-mass": "על מנת להמריא בפחות מ-60 שניות, נא להוריד לפחות כ-{{mass}}קג מהמטען.",
+  "no-available-hours-for": "לא נמצאו שעות זמינות להמראה!",
+  "choose-another-day": "אנא בחר יום אחר."
+}

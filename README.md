@@ -1,5 +1,14 @@
-## KNOWN PROBLEMS
-When running docker-compose, the backend container might fail. If it does, wait until the db container finishes setup, and start the backend container again.
+
+# Run instructions
+Clone the repository to your PC.
+Open the terminal at the folder you cloned the repository into.
+Run "docker compose build" and wait until it finishes.
+Run "docker compose up" to start the app.
+Run "docker compose down" to stop the app.
+
+# KNOWN PROBLEM WITH DOCKER COMPOSE
+After running 'docker compose up' , please check if the backend container has failed.
+If it did, please wait a few seconds until the db container finishes setup and start the backend container again.
 
 # Nativ Hazahav Challange
 This is my submition for the Nativ Hazahav Challange (חידת נתיב הזהב)

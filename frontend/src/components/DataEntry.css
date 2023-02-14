@@ -1,0 +1,11 @@
+.data-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 200px;
+    min-width: 500px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}

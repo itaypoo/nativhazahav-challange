@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ResultsPage from "./pages/ResultsPage";
 import './i18n'
 import {useTranslation} from "react-i18next";
+import AllDataPage from "./pages/AllDataPage";
 function App() {
     const { t, i18n } = useTranslation();
     document.body.dir = i18n.dir();
@@ -15,6 +16,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/results" element={<ResultsPage/>}/>
+                <Route path="/past-data" element={<AllDataPage/>}/>
             </Routes>
         </BrowserRouter>
       </>

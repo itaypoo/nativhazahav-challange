@@ -12,6 +12,8 @@ function HomePage() {
     const massInputRef = React.useRef<HTMLInputElement>(null);
     const navigate = useNavigate()
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+    const [loading, setLoading] = useState(false);
+
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang)
     }
@@ -38,6 +40,7 @@ function HomePage() {
                 dateString = dateString.slice(0, 8) + "0" + dateString.slice(8);
             }
             // make a request to the backend on port 8080 to get the plane info
+            setLoading(true)
             fetch(`http://localhost:8080/?inputMass=${mass}&date=${dateString}`)
                 .then(res => res.json())// parse the result JSON
                 .then((data) => {
@@ -89,6 +92,7 @@ function HomePage() {
                             required
                         />
                         <button type={"submit"} className={"button-big"}> {t("next-button")} </button>
+                        { loading ? <div className={"spinner"}/> : null }
                     </form>
                 </div>
 

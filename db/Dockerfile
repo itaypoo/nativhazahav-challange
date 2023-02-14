@@ -5,6 +5,7 @@ FROM mysql:8
 ENV MYSQL_ROOT_PASSWORD=mysecretpassword
 ENV MYSQL_DATABASE=mydb
 
+# Define a 'healthcheck' to check if the database is running so the backend container can wait for it
 HEALTHCHECK CMD curl --fail http://localhost:3306 || exit 1
 
 # Copy the SQL script to initialize the database

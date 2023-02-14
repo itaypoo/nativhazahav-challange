@@ -16,7 +16,7 @@ to start the app.
 
 Wait until you see ```` Setup complete. Visit http://localhost:3000 to see the app! ```` . Go to http://localhost:3000 and enjoy!
 
-To see all data stored on the database, go to ````http://localhost:3000/past-data````
+To see all data stored on the database, go to ````http://localhost:3000/past-data```` . This is for debugging purposes and there is no way to access it through the website. 
 
 # Nativ Hazahav Challange
 This is my submition for the Nativ Hazahav Challange (חידת נתיב הזהב)

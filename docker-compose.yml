@@ -15,7 +15,8 @@ services:
       - DB_PASSWORD=mysecretpassword
       - DB_NAME=mydb
     depends_on:
-      - db
+      db:
+          condition: service_healthy
 
   db:
     build: ./db

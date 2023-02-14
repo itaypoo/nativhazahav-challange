@@ -1,3 +1,6 @@
+## KNOWN PROBLEMS
+When running docker-compose, the backend container might fail. If it does, wait until the db container finishes setup, and start the backend container again.
+
 # Nativ Hazahav Challange
 This is my submition for the Nativ Hazahav Challange (חידת נתיב הזהב)
 

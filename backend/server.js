@@ -11,11 +11,11 @@ const planeMass = 35000    // (kg)
 const flightSpeed = 140    // (m/s)
 const engineForce = 100000 // (N)
 
-const connection = mysql.createConnection({ // create a connection to the database
-    host: 'localhost',
-    user: 'root',
-    password: '123e456y',
-    database: 'plane_stuff'
+const connection = mysql.createConnection({ // create a connection to the db
+    host: 'db',
+    user: 'dan',
+    password: 'mysecretpassword',
+    database: 'mydb'
 });
 
 app.use(cors())

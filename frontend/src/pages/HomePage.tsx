@@ -37,7 +37,7 @@ function HomePage() {
                 // yyyy-mm-0d
                 dateString = dateString.slice(0, 8) + "0" + dateString.slice(8);
             }
-            // make a request to the server on port 8080 to get the plane info
+            // make a request to the backend on port 8080 to get the plane info
             fetch(`http://localhost:8080/?inputMass=${mass}&date=${dateString}`)
                 .then(res => res.json())// parse the result JSON
                 .then((data) => {

@@ -3,10 +3,10 @@
 /.idea/vcs.xml
 /.idea/workspace.xml
 
-/client/.idea/workspace.xml
-/client/.idea/vcs.xml
-/client/.idea/discord.xml
-/client/.idea/jsLibraryMappings.xml
-/client/.idea/misc.xml
-/client/.idea/modules.xml
-/client/.idea/.gitignore
+/frontend/.idea/workspace.xml
+/frontend/.idea/vcs.xml
+/frontend/.idea/discord.xml
+/frontend/.idea/jsLibraryMappings.xml
+/frontend/.idea/misc.xml
+/frontend/.idea/modules.xml
+/frontend/.idea/.gitignore

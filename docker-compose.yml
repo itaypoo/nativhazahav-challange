@@ -1,0 +1,30 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_USER=dan
+      - DB_PASSWORD=mysecretpassword
+      - DB_NAME=mydb
+    depends_on:
+      - db
+
+  db:
+    build: ./db
+    environment:
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=dan
+      - MYSQL_HOST=db
+      - MYSQL_PASSWORD=mysecretpassword
+      - MYSQL_ROOT_PASSWORD=mysecretpassword
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "3307:3306"
